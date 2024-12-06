@@ -36,7 +36,12 @@
     }
 
 }
-
+.file-input:disabled {
+    opacity: 0.5;
+}
+.file-input:enabled {
+    opacity: 1;
+}
 
 
 /* Genel kutu stili */
@@ -76,6 +81,9 @@
     border-radius: 5px;
     color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 
 }
 .result h2{
@@ -86,6 +94,13 @@
     margin-top: 20px;
 }
 
+.result p.tumor-yes {
+    color: red;
+}
+
+.result p.tumor-no {
+    color: green;
+}
 .uploaded-image img {
     max-width: 100%;
     height: auto;
@@ -96,7 +111,7 @@
 
 /* Güven skoru ve sonucu vurgulamak */
 .result p {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
     margin-top: 5px;
 }
