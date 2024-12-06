@@ -43,7 +43,7 @@ def index():
             # Tahmin yapın
             prediction = model.predict(image_array)
             confidence = prediction[0][0]
-            result = "Tumor Var" if confidence > 0.5 else "Tumor Yok"
+            result = "Tümor Var" if confidence > 0.5 else "Tümor Yok"
 
             #  URL'sini belirleyin
             image_url = url_for("static", filename=f"uploads/{file.filename}")
